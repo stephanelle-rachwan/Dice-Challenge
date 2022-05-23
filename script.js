@@ -17,4 +17,14 @@ const diceTwoImage = 'assets/dice' + diceTwoRandomNum + '.png';
 document.getElementsByClassName("img2")[0].setAttribute('src', diceTwoImage);
 
 
+// Changing the title depending on the winner
+if (diceOneRandomNum > diceTwoRandomNum) {
+  document.getElementsByTagName('h1')[0].innerHTML = "Player 1 Wins!";
+}
+else if (diceOneRandomNum < diceTwoRandomNum) {
+  document.getElementsByTagName('h1')[0].innerHTML = "Player 2 Wins!";
+}
+else {
+  document.getElementsByTagName('h1')[0].innerHTML = "Draw!";
+}
 // use this :triangular_flag_on_post: emoji 
